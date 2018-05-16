@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SkyCableWebModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblAdminPin">
+    <Key>
+      <PropertyRef Name="srno" />
+    </Key>
+    <Property Name="AdminPin" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="srno" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblAgent">
+    <Key>
+      <PropertyRef Name="Aid" />
+    </Key>
+    <Property Name="AgentId" Type="Int32" />
+    <Property Name="AgentName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="UserEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyId" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Aid" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="tblArea">
+    <Key>
+      <PropertyRef Name="AreaId" />
+    </Key>
+    <Property Name="Area" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyId" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="AreaId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="tblCompanyMaster">
+    <Key>
+      <PropertyRef Name="Srno" />
+    </Key>
+    <Property Name="CompanyName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyMobNo" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyEmailId" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyGSTNo" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyLogo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="AccountNo" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="IFSC" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="WihGST" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="GSTinout" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyId" Type="Int64" />
+    <Property Name="RemarkBill" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Srno" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="tblDatabaseName">
+    <Key>
+      <PropertyRef Name="Srno" />
+    </Key>
+    <Property Name="MyServerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MyDatabaseName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MyPath" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Srno" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="tblFormName">
+    <Key>
+      <PropertyRef Name="Srno" />
+    </Key>
+    <Property Name="Status" Type="Int32" />
+    <Property Name="FieldName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Srno" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblLogin">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblpackage">
+    <Key>
+      <PropertyRef Name="PID" />
+    </Key>
+    <Property Name="Package" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Rate" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CompanyId" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="PID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="tblReconnect">
+    <Key>
+      <PropertyRef Name="RID" />
+    </Key>
+    <Property Name="CustId" Type="Int64" />
+    <Property Name="MacId" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ReconDate" Type="DateTime" Precision="3" />
+    <Property Name="DiscDate" Type="DateTime" Precision="3" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CompanyId" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="RID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="tblReg">
+    <Key>
+      <PropertyRef Name="CID" />
+    </Key>
+    <Property Name="CustomerID" Type="Int64" Nullable="false" />
+    <Property Name="NoBox" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="SetupNoReg" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ConsumerName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="LandMark" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Mbno1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Mbno2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Area" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="AgentId" Type="Int64" />
+    <Property Name="AgentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CGSTPer" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CSGTAmt" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SGSTPer" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SGSTAmt" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TotRate" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Dics" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TotAmt" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CustBal" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="RegNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ImgP1" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ImgP2" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ImgP3" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IDProof" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DtFrom" Type="DateTime" Precision="3" />
+    <Property Name="CNameMarathi" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="UserName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CustPassword" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="ChangeCol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NotifyStat" Type="Int32" />
+    <Property Name="Remark" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyId" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="AccNoBox" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="PackageName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CDate" Type="DateTime" Precision="3" />
+    <Property Name="CTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblSetupDetail">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Name="CustomerID" Type="Int64" />
+    <Property Name="Setboxno" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="SDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="FormNo" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Packeges" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Rate" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Disc" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Amt" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CardNo" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="FaultyNo" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="StatType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyId" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="SID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityContainer Name="SkyCableWebEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblAdminPins" EntityType="Self.tblAdminPin" />
+    <EntitySet Name="tblAgents" EntityType="Self.tblAgent" />
+    <EntitySet Name="tblAreas" EntityType="Self.tblArea" />
+    <EntitySet Name="tblCompanyMasters" EntityType="Self.tblCompanyMaster" />
+    <EntitySet Name="tblDatabaseNames" EntityType="Self.tblDatabaseName" />
+    <EntitySet Name="tblFormNames" EntityType="Self.tblFormName" />
+    <EntitySet Name="tblLogins" EntityType="Self.tblLogin" />
+    <EntitySet Name="tblpackages" EntityType="Self.tblpackage" />
+    <EntitySet Name="tblReconnects" EntityType="Self.tblReconnect" />
+    <EntitySet Name="tblRegs" EntityType="Self.tblReg" />
+    <EntitySet Name="tblSetupDetails" EntityType="Self.tblSetupDetail" />
+    <FunctionImport Name="SP_Package" ReturnType="Collection(SkyCableWebModel.SP_Package_Result)">
+      <Parameter Name="PackageName" Mode="In" Type="String" />
+      <Parameter Name="Rate" Mode="In" Type="Decimal" />
+      <Parameter Name="CompanyId" Mode="In" Type="String" />
+      <Parameter Name="IUD" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="SP_Package_Result">
+    <Property Type="String" Name="Package" Nullable="true" MaxLength="500" />
+    <Property Type="Decimal" Name="Rate" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="String" Name="CompanyId" Nullable="true" MaxLength="500" />
+    <Property Type="Int64" Name="PID" Nullable="false" />
+  </ComplexType>
+</Schema>

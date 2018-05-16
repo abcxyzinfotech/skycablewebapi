@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SkyCableWebModelStoreContainer" CdmEntityContainer="SkyCableWebEntities">
+    <EntitySetMapping Name="tblAdminPins">
+      <EntityTypeMapping TypeName="SkyCableWebModel.tblAdminPin">
+        <MappingFragment StoreEntitySet="tblAdminPin">
+          <ScalarProperty Name="AdminPin" ColumnName="AdminPin" />
+          <ScalarProperty Name="srno" ColumnName="srno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAgents">
+      <EntityTypeMapping TypeName="SkyCableWebModel.tblAgent">
+        <MappingFragment StoreEntitySet="tblAgent">
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="AgentName" ColumnName="AgentName" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Aid" ColumnName="Aid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAreas">
+      <EntityTypeMapping TypeName="SkyCableWebModel.tblArea">
+        <MappingFragment StoreEntitySet="tblArea">
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="AreaId" ColumnName="AreaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCompanyMasters">
+      <EntityTypeMapping TypeName="SkyCableWebModel.tblCompanyMaster">
+        <MappingFragment StoreEntitySet="tblCompanyMaster">
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CompanyAddress" ColumnName="CompanyAddress" />
+          <ScalarProperty Name="CompanyMobNo" ColumnName="CompanyMobNo" />
+          <ScalarProperty Name="CompanyEmailId" ColumnName="CompanyEmailId" />
+          <ScalarProperty Name="CompanyGSTNo" ColumnName="CompanyGSTNo" />
+          <ScalarProperty Name="CompanyLogo" ColumnName="CompanyLogo" />
+          <ScalarProperty Name="AccountNo" ColumnName="AccountNo" />
+          <ScalarProperty Name="IFSC" ColumnName="IFSC" />
+          <ScalarProperty Name="WihGST" ColumnName="WihGST" />
+          <ScalarProperty Name="GSTinout" ColumnName="GSTinout" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="RemarkBill" ColumnName="RemarkBill" />
+          <ScalarProperty Name="Srno" ColumnName="Srno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDatabaseNames">
+      <EntityTypeMapping TypeName="SkyCableWebModel.tblDatabaseName">
+        <MappingFragment StoreEntitySet="tblDatabaseName">
+          <ScalarProperty Name="MyServerName" ColumnName="MyServerName" />
+          <ScalarProperty Name="MyDatabaseName" ColumnName="MyDatabaseName" />
+          <ScalarProperty Name="MyPath" ColumnName="MyPath" />
+          <ScalarProperty Name="Srno" ColumnName="Srno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFormNames">
+      <EntityTypeMapping TypeName="SkyCableWebModel.tblFormName">
+        <MappingFragment StoreEntitySet="tblFormName">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="Srno" ColumnName="Srno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLogins">
+      <EntityTypeMapping TypeName="SkyCableWebModel.tblLogin">
+        <MappingFragment StoreEntitySet="tblLogin">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblpackages">
+      <EntityTypeMapping TypeName="SkyCableWebModel.tblpackage">
+        <MappingFragment StoreEntitySet="tblpackage">
+          <ScalarProperty Name="Package" ColumnName="Package" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblReconnects">
+      <EntityTypeMapping TypeName="SkyCableWebModel.tblReconnect">
+        <MappingFragment StoreEntitySet="tblReconnect">
+          <ScalarProperty Name="CustId" ColumnName="CustId" />
+          <ScalarProperty Name="MacId" ColumnName="MacId" />
+          <ScalarProperty Name="ReconDate" ColumnName="ReconDate" />
+          <ScalarProperty Name="DiscDate" ColumnName="DiscDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="RID" ColumnName="RID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRegs">
+      <EntityTypeMapping TypeName="SkyCableWebModel.tblReg">
+        <MappingFragment StoreEntitySet="tblReg">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="NoBox" ColumnName="NoBox" />
+          <ScalarProperty Name="SetupNoReg" ColumnName="SetupNoReg" />
+          <ScalarProperty Name="ConsumerName" ColumnName="ConsumerName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="LandMark" ColumnName="LandMark" />
+          <ScalarProperty Name="Mbno1" ColumnName="Mbno1" />
+          <ScalarProperty Name="Mbno2" ColumnName="Mbno2" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="AgentName" ColumnName="AgentName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="CGSTPer" ColumnName="CGSTPer" />
+          <ScalarProperty Name="CSGTAmt" ColumnName="CSGTAmt" />
+          <ScalarProperty Name="SGSTPer" ColumnName="SGSTPer" />
+          <ScalarProperty Name="SGSTAmt" ColumnName="SGSTAmt" />
+          <ScalarProperty Name="TotRate" ColumnName="TotRate" />
+          <ScalarProperty Name="Dics" ColumnName="Dics" />
+          <ScalarProperty Name="TotAmt" ColumnName="TotAmt" />
+          <ScalarProperty Name="CustBal" ColumnName="CustBal" />
+          <ScalarProperty Name="RegNo" ColumnName="RegNo" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="ImgP1" ColumnName="ImgP1" />
+          <ScalarProperty Name="ImgP2" ColumnName="ImgP2" />
+          <ScalarProperty Name="ImgP3" ColumnName="ImgP3" />
+          <ScalarProperty Name="IDProof" ColumnName="IDProof" />
+          <ScalarProperty Name="DtFrom" ColumnName="DtFrom" />
+          <ScalarProperty Name="CNameMarathi" ColumnName="CNameMarathi" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="CustPassword" ColumnName="CustPassword" />
+          <ScalarProperty Name="ChangeCol" ColumnName="ChangeCol" />
+          <ScalarProperty Name="NotifyStat" ColumnName="NotifyStat" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="AccNoBox" ColumnName="AccNoBox" />
+          <ScalarProperty Name="PackageName" ColumnName="PackageName" />
+          <ScalarProperty Name="CID" ColumnName="CID" />
+          <ScalarProperty Name="CDate" ColumnName="CDate" />
+          <ScalarProperty Name="CTime" ColumnName="CTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSetupDetails">
+      <EntityTypeMapping TypeName="SkyCableWebModel.tblSetupDetail">
+        <MappingFragment StoreEntitySet="tblSetupDetails">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Setboxno" ColumnName="Setboxno" />
+          <ScalarProperty Name="SDate" ColumnName="SDate" />
+          <ScalarProperty Name="FormNo" ColumnName="FormNo" />
+          <ScalarProperty Name="Packeges" ColumnName="Packeges" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Disc" ColumnName="Disc" />
+          <ScalarProperty Name="Amt" ColumnName="Amt" />
+          <ScalarProperty Name="CardNo" ColumnName="CardNo" />
+          <ScalarProperty Name="FaultyNo" ColumnName="FaultyNo" />
+          <ScalarProperty Name="StatType" ColumnName="StatType" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="SID" ColumnName="SID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_Package" FunctionName="SkyCableWebModel.Store.SP_Package">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SkyCableWebModel.SP_Package_Result">
+          <ScalarProperty Name="Package" ColumnName="Package" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

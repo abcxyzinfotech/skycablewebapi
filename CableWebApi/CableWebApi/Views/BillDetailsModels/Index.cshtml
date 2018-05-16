@@ -1,0 +1,243 @@
+﻿@model IEnumerable<CableWebApi.Models.BillDetailsModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NoBox)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SetupBoxBill)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BillNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BillDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mbno1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Area)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CMonth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MonthCharge)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CGSTPer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CGSTAmt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SGSTPer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SGSTAmt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GrandTot)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OldBal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PayableAmt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dtfrom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PMonth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ToDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Disc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaidAmt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PayDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaidAmt1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PayDate1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Balance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AgentId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AgentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CashDet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PayStat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccNoBox)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PackageName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NoBox)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SetupBoxBill)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BillNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BillDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mbno1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Area)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CMonth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MonthCharge)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CGSTPer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CGSTAmt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SGSTPer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SGSTAmt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GrandTot)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OldBal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PayableAmt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dtfrom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PMonth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ToDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Disc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaidAmt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PayDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaidAmt1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PayDate1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Balance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AgentId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AgentName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RegNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CYear)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CashDet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PayStat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompanyId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AccNoBox)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PackageName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.BID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.BID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.BID })
+        </td>
+    </tr>
+}
+
+</table>

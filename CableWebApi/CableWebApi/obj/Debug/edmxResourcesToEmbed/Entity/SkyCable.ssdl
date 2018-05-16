@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SkyCableWebModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblAdminPin">
+    <Key>
+      <PropertyRef Name="srno" />
+    </Key>
+    <Property Name="AdminPin" Type="varchar(max)" />
+    <Property Name="srno" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblAgent">
+    <Key>
+      <PropertyRef Name="Aid" />
+    </Key>
+    <Property Name="AgentId" Type="int" />
+    <Property Name="AgentName" Type="varchar" MaxLength="500" />
+    <Property Name="UserEmail" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="CompanyId" Type="varchar" MaxLength="500" />
+    <Property Name="Aid" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblArea">
+    <Key>
+      <PropertyRef Name="AreaId" />
+    </Key>
+    <Property Name="Area" Type="varchar" MaxLength="500" />
+    <Property Name="CompanyId" Type="varchar" MaxLength="500" />
+    <Property Name="AreaId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCompanyMaster">
+    <Key>
+      <PropertyRef Name="Srno" />
+    </Key>
+    <Property Name="CompanyName" Type="varchar" MaxLength="500" />
+    <Property Name="CompanyAddress" Type="varchar(max)" />
+    <Property Name="CompanyMobNo" Type="varchar" MaxLength="500" />
+    <Property Name="CompanyEmailId" Type="varchar" MaxLength="500" />
+    <Property Name="CompanyGSTNo" Type="varchar" MaxLength="500" />
+    <Property Name="CompanyLogo" Type="image" />
+    <Property Name="AccountNo" Type="varchar" MaxLength="500" />
+    <Property Name="IFSC" Type="varchar" MaxLength="500" />
+    <Property Name="WihGST" Type="varchar" MaxLength="500" />
+    <Property Name="GSTinout" Type="varchar" MaxLength="500" />
+    <Property Name="CompanyId" Type="bigint" />
+    <Property Name="RemarkBill" Type="nvarchar" MaxLength="500" />
+    <Property Name="Srno" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblDatabaseName">
+    <Key>
+      <PropertyRef Name="Srno" />
+    </Key>
+    <Property Name="MyServerName" Type="varchar" MaxLength="50" />
+    <Property Name="MyDatabaseName" Type="varchar" MaxLength="50" />
+    <Property Name="MyPath" Type="varchar" MaxLength="50" />
+    <Property Name="Srno" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblFormName">
+    <Key>
+      <PropertyRef Name="Srno" />
+    </Key>
+    <Property Name="Status" Type="int" />
+    <Property Name="FieldName" Type="varchar" MaxLength="500" />
+    <Property Name="Srno" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblLogin">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="UserPassword" Type="varchar" MaxLength="50" />
+    <Property Name="UserType" Type="varchar" MaxLength="50" />
+    <Property Name="CompanyId" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblpackage">
+    <Key>
+      <PropertyRef Name="PID" />
+    </Key>
+    <Property Name="Package" Type="varchar" MaxLength="500" />
+    <Property Name="Rate" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="CompanyId" Type="varchar" MaxLength="500" />
+    <Property Name="PID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblReconnect">
+    <Key>
+      <PropertyRef Name="RID" />
+    </Key>
+    <Property Name="CustId" Type="bigint" />
+    <Property Name="MacId" Type="varchar(max)" />
+    <Property Name="ReconDate" Type="datetime" />
+    <Property Name="DiscDate" Type="datetime" />
+    <Property Name="Amount" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="CompanyId" Type="varchar" MaxLength="500" />
+    <Property Name="RID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblReg">
+    <Key>
+      <PropertyRef Name="CID" />
+    </Key>
+    <Property Name="CustomerID" Type="bigint" Nullable="false" />
+    <Property Name="NoBox" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="SetupNoReg" Type="varchar(max)" />
+    <Property Name="ConsumerName" Type="varchar(max)" />
+    <Property Name="Address" Type="varchar(max)" />
+    <Property Name="LandMark" Type="varchar(max)" />
+    <Property Name="Mbno1" Type="varchar(max)" />
+    <Property Name="Mbno2" Type="varchar(max)" />
+    <Property Name="Area" Type="varchar(max)" />
+    <Property Name="AgentId" Type="bigint" />
+    <Property Name="AgentName" Type="varchar(max)" />
+    <Property Name="Phone" Type="varchar(max)" />
+    <Property Name="CGSTPer" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="CSGTAmt" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="SGSTPer" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="SGSTAmt" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="TotRate" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Dics" Type="varchar(max)" />
+    <Property Name="TotAmt" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="CustBal" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="RegNo" Type="varchar(max)" />
+    <Property Name="Type" Type="varchar(max)" />
+    <Property Name="ImgP1" Type="image" />
+    <Property Name="ImgP2" Type="image" />
+    <Property Name="ImgP3" Type="image" />
+    <Property Name="IDProof" Type="varchar(max)" />
+    <Property Name="DtFrom" Type="datetime" />
+    <Property Name="CNameMarathi" Type="nvarchar" MaxLength="500" />
+    <Property Name="UserName" Type="varchar" MaxLength="500" />
+    <Property Name="CustPassword" Type="varchar" MaxLength="500" />
+    <Property Name="ChangeCol" Type="varchar" MaxLength="50" />
+    <Property Name="NotifyStat" Type="int" />
+    <Property Name="Remark" Type="varchar(max)" />
+    <Property Name="CompanyId" Type="varchar" MaxLength="500" />
+    <Property Name="AccNoBox" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="PackageName" Type="varchar(max)" />
+    <Property Name="CID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CDate" Type="datetime" />
+    <Property Name="CTime" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblSetupDetails">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Name="CustomerID" Type="bigint" />
+    <Property Name="Setboxno" Type="varchar" MaxLength="500" />
+    <Property Name="SDate" Type="varchar(max)" />
+    <Property Name="FormNo" Type="varchar" MaxLength="500" />
+    <Property Name="Packeges" Type="varchar" MaxLength="500" />
+    <Property Name="Rate" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="Disc" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Amt" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="CardNo" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="FaultyNo" Type="varchar" MaxLength="500" />
+    <Property Name="StatType" Type="varchar" MaxLength="50" />
+    <Property Name="CompanyId" Type="varchar" MaxLength="500" />
+    <Property Name="SID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <Function Name="SP_Package" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PackageName" Type="varchar" Mode="In" />
+    <Parameter Name="Rate" Type="numeric" Mode="In" />
+    <Parameter Name="CompanyId" Type="varchar" Mode="In" />
+    <Parameter Name="IUD" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="SkyCableWebModelStoreContainer">
+    <EntitySet Name="tblAdminPin" EntityType="Self.tblAdminPin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblAgent" EntityType="Self.tblAgent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblArea" EntityType="Self.tblArea" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCompanyMaster" EntityType="Self.tblCompanyMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDatabaseName" EntityType="Self.tblDatabaseName" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFormName" EntityType="Self.tblFormName" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLogin" EntityType="Self.tblLogin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblpackage" EntityType="Self.tblpackage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblReconnect" EntityType="Self.tblReconnect" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblReg" EntityType="Self.tblReg" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSetupDetails" EntityType="Self.tblSetupDetails" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

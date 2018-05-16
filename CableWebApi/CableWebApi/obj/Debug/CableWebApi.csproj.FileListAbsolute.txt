@@ -1,0 +1,94 @@
+E:\CableWebApi\CableWebApi\bin\roslyn\csc.exe
+E:\CableWebApi\CableWebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CableWebApi\CableWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CableWebApi\CableWebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CableWebApi\CableWebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CableWebApi\CableWebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CableWebApi\CableWebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CableWebApi\CableWebApi\bin\roslyn\System.Collections.Immutable.dll
+E:\CableWebApi\CableWebApi\bin\roslyn\System.Reflection.Metadata.dll
+E:\CableWebApi\CableWebApi\bin\roslyn\vbc.exe
+E:\CableWebApi\CableWebApi\bin\roslyn\VBCSCompiler.exe
+E:\CableWebApi\CableWebApi\bin\roslyn\VBCSCompiler.exe.config
+E:\CableWebApi\CableWebApi\bin\CableWebApi.dll.config
+E:\CableWebApi\CableWebApi\bin\CableWebApi.dll
+E:\CableWebApi\CableWebApi\bin\CableWebApi.pdb
+E:\CableWebApi\CableWebApi\bin\EntityFramework.dll
+E:\CableWebApi\CableWebApi\bin\EntityFramework.SqlServer.dll
+E:\CableWebApi\CableWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CableWebApi\CableWebApi\bin\Microsoft.Web.Infrastructure.dll
+E:\CableWebApi\CableWebApi\bin\Newtonsoft.Json.dll
+E:\CableWebApi\CableWebApi\bin\System.Net.Http.Formatting.dll
+E:\CableWebApi\CableWebApi\bin\System.Web.Helpers.dll
+E:\CableWebApi\CableWebApi\bin\System.Web.Http.dll
+E:\CableWebApi\CableWebApi\bin\System.Web.Http.WebHost.dll
+E:\CableWebApi\CableWebApi\bin\System.Web.Mvc.dll
+E:\CableWebApi\CableWebApi\bin\System.Web.Razor.dll
+E:\CableWebApi\CableWebApi\bin\System.Web.Webpages.Deployment.dll
+E:\CableWebApi\CableWebApi\bin\System.Web.Webpages.dll
+E:\CableWebApi\CableWebApi\bin\System.Web.Webpages.Razor.dll
+E:\CableWebApi\CableWebApi\bin\EntityFramework.xml
+E:\CableWebApi\CableWebApi\bin\EntityFramework.SqlServer.xml
+E:\CableWebApi\CableWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CableWebApi\CableWebApi\bin\System.Web.Razor.xml
+E:\CableWebApi\CableWebApi\bin\System.Web.Webpages.xml
+E:\CableWebApi\CableWebApi\bin\System.Web.Webpages.Deployment.xml
+E:\CableWebApi\CableWebApi\bin\System.Web.Webpages.Razor.xml
+E:\CableWebApi\CableWebApi\bin\System.Web.Helpers.xml
+E:\CableWebApi\CableWebApi\bin\System.Web.Mvc.xml
+E:\CableWebApi\CableWebApi\bin\Newtonsoft.Json.xml
+E:\CableWebApi\CableWebApi\bin\System.Net.Http.Formatting.xml
+E:\CableWebApi\CableWebApi\bin\System.Web.Http.xml
+E:\CableWebApi\CableWebApi\bin\System.Web.Http.WebHost.xml
+E:\CableWebApi\CableWebApi\obj\Debug\CableWebApi.dll
+E:\CableWebApi\CableWebApi\obj\Debug\CableWebApi.pdb
+E:\CableWebApi\CableWebApi\obj\Debug\CableWebApi.csprojResolveAssemblyReference.cache
+E:\CableWebApi - Copy (2)\CableWebApi\bin\roslyn\csc.exe
+E:\CableWebApi - Copy (2)\CableWebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CableWebApi - Copy (2)\CableWebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CableWebApi - Copy (2)\CableWebApi\bin\roslyn\System.Collections.Immutable.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\roslyn\System.Reflection.Metadata.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\roslyn\vbc.exe
+E:\CableWebApi - Copy (2)\CableWebApi\bin\roslyn\VBCSCompiler.exe
+E:\CableWebApi - Copy (2)\CableWebApi\bin\roslyn\VBCSCompiler.exe.config
+E:\CableWebApi - Copy (2)\CableWebApi\bin\CableWebApi.dll.config
+E:\CableWebApi - Copy (2)\CableWebApi\bin\CableWebApi.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\CableWebApi.pdb
+E:\CableWebApi - Copy (2)\CableWebApi\bin\EntityFramework.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\EntityFramework.SqlServer.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\Microsoft.Web.Infrastructure.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\Newtonsoft.Json.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Net.Http.Formatting.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Web.Helpers.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Web.Http.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Web.Http.WebHost.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Web.Mvc.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Web.Razor.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Web.Webpages.Deployment.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Web.Webpages.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Web.Webpages.Razor.dll
+E:\CableWebApi - Copy (2)\CableWebApi\bin\EntityFramework.xml
+E:\CableWebApi - Copy (2)\CableWebApi\bin\EntityFramework.SqlServer.xml
+E:\CableWebApi - Copy (2)\CableWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Web.Razor.xml
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Web.Webpages.xml
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Web.Webpages.Deployment.xml
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Web.Webpages.Razor.xml
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Web.Helpers.xml
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Web.Mvc.xml
+E:\CableWebApi - Copy (2)\CableWebApi\bin\Newtonsoft.Json.xml
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Net.Http.Formatting.xml
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Web.Http.xml
+E:\CableWebApi - Copy (2)\CableWebApi\bin\System.Web.Http.WebHost.xml
+E:\CableWebApi - Copy (2)\CableWebApi\obj\Debug\CableWebApi.Migrations.initialcreate.resources
+E:\CableWebApi - Copy (2)\CableWebApi\obj\Debug\CableWebApi.csproj.GenerateResource.Cache
+E:\CableWebApi - Copy (2)\CableWebApi\obj\Debug\CableWebApi.dll
+E:\CableWebApi - Copy (2)\CableWebApi\obj\Debug\CableWebApi.pdb
+E:\CableWebApi - Copy (2)\CableWebApi\obj\Debug\CableWebApi.Migrations.update.resources
+E:\CableWebApi - Copy (2)\CableWebApi\obj\Debug\CableWebApi.csprojResolveAssemblyReference.cache
+E:\CableWebApi - Copy (2)\CableWebApi\obj\Debug\CableWebApi.Migrations.initialupdate1.resources
